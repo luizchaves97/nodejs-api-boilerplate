@@ -1,0 +1,36 @@
+{
+  "name": "nodejs-api-boilerplate",
+  "description": "This repository is a boilerplate nodejs API using docker, express, typescript, jest, eslint and prettier.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": "Luiz Felipe",
+  "scripts": {
+    "start:dev": "ts-node-dev --respawn --transpileOnly src/server.ts",
+    "lint": "err=0; eslint --ext .ts src || err=1; tsc --noEmit || err=1; exit $err",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.1",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "sequelize": "^5.18.4",
+    "typescript": "^3.6.2",
+    "youch": "^2.0.10"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@typescript-eslint/eslint-plugin": "^2.2.0",
+    "@typescript-eslint/parser": "^2.2.0",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "ts-node-dev": "^1.0.0-pre.42"
+  }
+}
